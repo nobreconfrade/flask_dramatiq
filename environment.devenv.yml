@@ -1,0 +1,7 @@
+name: flask_dramatiq
+
+dependencies:
+  - python==3.6.7
+  - flask==1.0.2
+  - dramatiq==1.4.3
+  - sqlalchemy==1.2.16
