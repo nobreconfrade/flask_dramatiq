@@ -8,7 +8,29 @@
 </head>
 <body>
     <h1>Prime number search</h1>
-    Values: {{values}}
-    <button action="/start_dramatiq">Start search</button>
+   <form action="/start_dramatiq" enctype=multipart/form-data>
+
+      <div class="form-group row">
+        <label class="col-sm-4 col-form-label">First value: </label>
+        <div class="col-sm-8">
+            <input type="text" class="form-control" name="start">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-4 col-form-label">Second value: </label>
+        <div class="col-sm-8">
+            <input type="text" class="form-control" name="end">
+        </div>
+      </div>
+
+      <button class="btn btn-primary" type="submit">Search</button>
+
+   </form>
+   <br>
+   <div>
+        <input type="button" onclick="location.href='/check';" value="Check answer" />
+        {{ values }}
+   </div>
+
 </body>
 </html>
